@@ -1,0 +1,64 @@
+/* Light Theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Light navbar */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333; /* Dark text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Home Page - Typing Effect */
+#home {
+    background: #e0e0e0; /* Slightly darker section */
+    display: flex;
+    flex-direction: column;
+}
+
+#typing-text {
+    font-family: 'VT323', monospace;
+    font-size: 48px;
+    color: #222; /* Dark gray */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #222;
+    width: fit-content;
+    display: inline-block;
+}
