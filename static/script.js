@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Modified typing effect with fixed prefix
     const typingTextElement = document.getElementById('typing-text');
     const prefix = "I love to ";
-    const suffixes = ["write code", "solve problems", "learn new things"];
+    const suffixes = ["write code", "solve problems", "learn things"];
     let suffixIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
