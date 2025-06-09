@@ -469,9 +469,11 @@ section {
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    max-width: 800px;
+    width: 100%;
 }
 
 .contact-item {
@@ -479,11 +481,22 @@ section {
     align-items: center;
     gap: 15px;
     font-size: 1.1rem;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item i {
     color: var(--secondary-color);
     font-size: 1.5rem;
+    width: 24px;
+    text-align: center;
 }
 
 .contact-item a {
@@ -492,6 +505,13 @@ section {
 
 .contact-item a:hover {
     color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 /* Footer */
